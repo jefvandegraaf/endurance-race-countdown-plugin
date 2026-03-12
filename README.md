@@ -112,14 +112,29 @@ endurance-race-block/
 ├── readme.txt                  # WordPress.org directory readme
 └── README.md                   # This file
 ```
+## Screenshots
+
+### Countdown Timer
+![Countdown dark](https://github.com/user-attachments/assets/2e15c9a6-dbe1-412b-8cae-5d7db24d6da2)
+![Countdown light](https://github.com/user-attachments/assets/5ceafaff-dad9-4c97-ba8a-3d1f8bbf343b)
+
+### Finisher Results
+![Finisher dark](https://github.com/user-attachments/assets/7e121832-23e5-458e-85ef-a5fd46b3e731)
+![Finisher light](https://github.com/user-attachments/assets/0b35163d-ff58-4c71-bb2b-f014ab5ce073)
+
+### Dark vs Light
+![Dark vs Light](https://github.com/user-attachments/assets/75ff5e58-39cb-4ccd-bd62-e72dd6d2aaaf)
+
+### Block Editor Sidebar
+![Event details](https://github.com/user-attachments/assets/2c2147c3-ce3b-4c7a-a844-99226766290a)
+![Discipline settings](https://github.com/user-attachments/assets/7acdf849-8e51-4e95-80b3-c4adf35be1e5)
+![Post-race results](https://github.com/user-attachments/assets/99c2781c-ec22-4c9f-bb14-719ae05bc8c5)
+![Race photo](https://github.com/user-attachments/assets/4f85af34-ba27-41a1-bdbf-5978c776b231)
+![Sidebar options](https://github.com/user-attachments/assets/49c31bc1-2417-4f51-9ee8-9cbb212b2d8f)
 
 ## Roadmap
 
-- [ ] Pace calculator (auto-calculate min/km from distance + time)
-- [ ] Strava activity link field
-- [ ] Personal best indicator (auto-detect PBs across your races)
-- [ ] Import from race results CSV
-- [ ] Block pattern: full race calendar page layout
+- [ ] TBD
 
 ## Contributing
 
