@@ -1,0 +1,10 @@
+<img width="317" height="472" alt="screenshot-side-bar-block-options" src="https://github.com/user-attachments/assets/49c31bc1-2417-4f51-9ee8-9cbb212b2d8f" />
+<img width="335" height="511" alt="screenshot-results-post-race" src="https://github.com/user-attachments/assets/99c2781c-ec22-4c9f-bb14-719ae05bc8c5" />
+<img width="309" height="260" alt="screenshot-race-photo" src="https://github.com/user-attachments/assets/4f85af34-ba27-41a1-bdbf-5978c776b231" />
+<img width="323" height="759" alt="screenshot-race-event-details" src="https://github.com/user-attachments/assets/2c2147c3-ce3b-4c7a-a844-99226766290a" />
+<img width="323" height="382" alt="screenshot-race-discipline-toggle-settings" src="https://github.com/user-attachments/assets/7acdf849-8e51-4e95-80b3-c4adf35be1e5" />
+<img width="495" height="796" alt="screenshot-finisher-results-light" src="https://github.com/user-attachments/assets/0b35163d-ff58-4c71-bb2b-f014ab5ce073" />
+<img width="498" height="789" alt="screenshot-finisher-results-dark" src="https://github.com/user-attachments/assets/7e121832-23e5-458e-85ef-a5fd46b3e731" />
+<img width="479" height="425" alt="screenshot-event-countdown-light" src="https://github.com/user-attachments/assets/5ceafaff-dad9-4c97-ba8a-3d1f8bbf343b" />
+<img width="478" height="421" alt="screenshot-event-countdown-dark" src="https://github.com/user-attachments/assets/2e15c9a6-dbe1-412b-8cae-5d7db24d6da2" />
+<img width="314" height="202" alt="screenshot-dark-vs-light" src="https://github.com/user-attachments/assets/75ff5e58-39cb-4ccd-bd62-e72dd6d2aaaf" />
