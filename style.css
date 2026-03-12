@@ -1,0 +1,376 @@
+/* ================================================================
+   Endurance Race Block v1.1 — Dark + Light Themes
+   ================================================================ */
+
+/* ── Card shell ───────────────────────────────────────────────── */
+.erb-race-card {
+	font-family: inherit;
+	border-radius: 12px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.erb-race-card__body {
+	padding: 28px 24px;
+	flex: 1;
+}
+
+/* ── DARK THEME (default) ─────────────────────────────────────── */
+.erb-race-card--dark {
+	background: #000000;
+	color: #ffffff;
+}
+
+.erb-race-card--dark .erb-race-card__leg {
+	background: rgba(255, 255, 255, 0.08);
+	border-color: rgba(255, 255, 255, 0.1);
+}
+
+.erb-race-card--dark .erb-race-card__split {
+	background: rgba(255, 255, 255, 0.06);
+	border-color: rgba(255, 255, 255, 0.06);
+}
+
+.erb-race-card--dark .erb-race-card__result-time {
+	color: #ffd700;
+}
+
+.erb-race-card--dark .erb-race-card__photo {
+	border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ── LIGHT THEME ──────────────────────────────────────────────── */
+.erb-race-card--light {
+	background: #ffffff;
+	color: #1a1a1a;
+	border: 1px solid #e0e0e0;
+}
+
+.erb-race-card--light .erb-race-card__title {
+	color: #1a1a1a;
+}
+
+.erb-race-card--light .erb-race-card__leg {
+	background: rgba(0, 0, 0, 0.04);
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+.erb-race-card--light .erb-race-card__split {
+	background: rgba(0, 0, 0, 0.03);
+	border-color: rgba(0, 0, 0, 0.08);
+}
+
+.erb-race-card--light .erb-race-card__result-time {
+	color: #c49000;
+}
+
+.erb-race-card--light .erb-race-card__badge--finisher {
+	background: rgba(196, 144, 0, 0.12);
+	color: #c49000;
+	border-color: rgba(196, 144, 0, 0.25);
+}
+
+.erb-race-card--light .erb-race-card__badge--upcoming {
+	background: rgba(0, 150, 136, 0.1);
+	color: #00897b;
+	border-color: rgba(0, 150, 136, 0.2);
+}
+
+.erb-race-card--light .erb-race-card__badge--dnf {
+	background: rgba(211, 47, 47, 0.08);
+	color: #d32f2f;
+	border-color: rgba(211, 47, 47, 0.2);
+}
+
+.erb-race-card--light .erb-race-card__badge--dns {
+	background: rgba(0, 0, 0, 0.05);
+	color: rgba(0, 0, 0, 0.4);
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+.erb-race-card--light .erb-race-card__photo {
+	border-top: 1px solid #e0e0e0;
+}
+
+.erb-race-card--light .erb-race-card__link-hint {
+	color: #00897b;
+}
+
+.erb-race-card--light.erb-race-card--finisher::before {
+	background: linear-gradient(90deg, #c49000, #e6b800, #c49000);
+}
+
+/* ── Clickable card link ──────────────────────────────────────── */
+a.erb-race-card-link {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	border-radius: 12px;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a.erb-race-card-link:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+a.erb-race-card-link:hover .erb-race-card__link-hint {
+	opacity: 1;
+}
+
+.erb-race-card__link-hint {
+	font-size: 0.7rem;
+	opacity: 0.4;
+	margin-top: 12px;
+	transition: opacity 0.2s;
+	letter-spacing: 0.03em;
+}
+
+/* ── Tri-color top bar ────────────────────────────────────────── */
+.erb-race-card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3px;
+	background: linear-gradient(90deg, #e94560, #f5a623, #4ecdc4);
+	z-index: 1;
+}
+
+.erb-race-card--finisher::before {
+	background: linear-gradient(90deg, #f5a623, #ffd700, #f5a623);
+	height: 4px;
+}
+
+/* ── Race photo ───────────────────────────────────────────────── */
+.erb-race-card__photo {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	display: block;
+}
+
+/* ── Badges ───────────────────────────────────────────────────── */
+.erb-race-card__badge {
+	display: inline-block;
+	font-size: 0.65rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	padding: 3px 10px;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+
+.erb-race-card__badge--finisher {
+	background: rgba(245, 166, 35, 0.2);
+	color: #ffd700;
+	border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.erb-race-card__badge--upcoming {
+	background: rgba(78, 205, 196, 0.15);
+	color: #4ecdc4;
+	border: 1px solid rgba(78, 205, 196, 0.25);
+}
+
+.erb-race-card__badge--dnf {
+	background: rgba(233, 69, 96, 0.15);
+	color: #e94560;
+	border: 1px solid rgba(233, 69, 96, 0.25);
+}
+
+.erb-race-card__badge--dns {
+	background: rgba(255, 255, 255, 0.08);
+	color: rgba(255, 255, 255, 0.5);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ── Typography ───────────────────────────────────────────────── */
+.erb-race-card__title {
+	margin: 0 0 6px;
+	font-size: 1.35rem;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+	color: inherit;
+}
+
+.erb-race-card__type {
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	opacity: 0.45;
+	margin-bottom: 4px;
+}
+
+.erb-race-card__location {
+	font-size: 0.85rem;
+	opacity: 0.7;
+	margin-bottom: 4px;
+}
+
+.erb-race-card__date {
+	font-size: 0.8rem;
+	opacity: 0.5;
+	margin-bottom: 18px;
+}
+
+/* ── Discipline legs — ALWAYS side by side ────────────────────── */
+.erb-race-card__legs {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	margin-bottom: 20px;
+	flex-wrap: nowrap;
+}
+
+.erb-race-card__leg {
+	border-radius: 8px;
+	padding: 8px 12px;
+	flex: 1 1 0;
+	min-width: 0;
+	backdrop-filter: blur(4px);
+	border: 1px solid transparent;
+}
+
+.erb-race-card__leg-icon {
+	font-size: 1.3rem;
+	display: block;
+	margin-bottom: 2px;
+}
+
+.erb-race-card__leg-label {
+	display: block;
+	font-size: 0.6rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	opacity: 0.6;
+}
+
+.erb-race-card__leg-value {
+	display: block;
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+/* ── Countdown timer ──────────────────────────────────────────── */
+.erb-race-card__timer {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.erb-race-card__unit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.erb-race-card__number {
+	font-size: 1.8rem;
+	font-weight: 800;
+	line-height: 1;
+	font-variant-numeric: tabular-nums;
+}
+
+.erb-race-card__unit-label {
+	font-size: 0.6rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	opacity: 0.5;
+	margin-top: 4px;
+}
+
+/* ── Results ──────────────────────────────────────────────────── */
+.erb-race-card__result-time {
+	font-size: 2rem;
+	font-weight: 800;
+	font-variant-numeric: tabular-nums;
+	margin-bottom: 6px;
+}
+
+.erb-race-card__result-rank {
+	font-size: 0.8rem;
+	opacity: 0.65;
+	margin-bottom: 14px;
+}
+
+.erb-race-card__splits {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	flex-wrap: wrap;
+	margin-bottom: 4px;
+}
+
+.erb-race-card__split {
+	border-radius: 6px;
+	padding: 5px 10px;
+	font-size: 0.7rem;
+	border: 1px solid transparent;
+}
+
+.erb-race-card__split-label {
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	opacity: 0.5;
+	font-size: 0.55rem;
+	margin-bottom: 1px;
+}
+
+.erb-race-card__split-time {
+	display: block;
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+}
+
+.erb-race-card__awaiting {
+	font-size: 0.9rem;
+	opacity: 0.5;
+	font-style: italic;
+}
+
+/* ── Editor wrapper ───────────────────────────────────────────── */
+.erb-wrapper {
+	max-width: 100%;
+}
+
+/* ── Mobile ───────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+	.erb-race-card__body {
+		padding: 20px 16px;
+	}
+	.erb-race-card__title {
+		font-size: 1.15rem;
+	}
+	.erb-race-card__number {
+		font-size: 1.4rem;
+	}
+	.erb-race-card__result-time {
+		font-size: 1.6rem;
+	}
+	.erb-race-card__legs {
+		gap: 8px;
+	}
+	.erb-race-card__leg {
+		padding: 6px 8px;
+	}
+	.erb-race-card__leg-icon {
+		font-size: 1.1rem;
+	}
+	.erb-race-card__leg-value {
+		font-size: 0.8rem;
+	}
+	.erb-race-card__splits {
+		gap: 6px;
+	}
+	.erb-race-card__photo {
+		aspect-ratio: 3 / 2;
+	}
+}
