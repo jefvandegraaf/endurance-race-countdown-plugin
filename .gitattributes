@@ -1,0 +1,20 @@
+# Automatically normalize line endings.
+* text=auto
+
+# Files and directories to exclude from the generated archive (export-ignore).
+# These will be omitted from GitHub/Packagist ZIP archives to keep packages small.
+
+# Continuous Integration configs.
+/.github export-ignore
+/.wordpress-org export-ignore
+
+# Don't include the dotfiles for distribution.
+/.* export-ignore
+
+# Mark docs as documentation for GitHub Linguist.
+/PUBLISHING-GUIDE.md linguist-documentation export-ignore
+/README.md linguist-documentation export-ignore
+
+
+# Keep license file.
+/LICENSE linguist-documentation
